@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/daily"
+            android:icon="@drawable/daily"
+            android:title="Daily"/>
+        <item android:id="@+id/work"
+            android:icon="@drawable/work"
+            android:title="Work"/>
+        <item android:id="@+id/learning"
+            android:icon="@drawable/book"
+            android:title="Learning"/>
+        <item android:id="@+id/family"
+            android:icon="@drawable/family"
+            android:title="Family"/>
+        <item android:id="@+id/friend"
+            android:icon="@drawable/friend"
+            android:title="Friend"/>
+        <item android:id="@+id/emotion"
+            android:icon="@drawable/emotion"
+            android:title="Emotion"/>
+    </group>
+</menu>
