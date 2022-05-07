@@ -1,12 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2022-05-07T18:20:43.892Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="bsZ1UehloKzxNyddDV3C" version="18.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-07T18:53:30.605Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36" etag="Pf0ZukQXaXLpF-UllXwX" version="18.0.2" type="github">
   <diagram id="omYFa3JbCpnDUuPpHqc-" name="Page-1">
     <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="M0i-RRYCZDcZrJxs6ZAG-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="90" y="100" width="30" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="M0i-RRYCZDcZrJxs6ZAG-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="M0i-RRYCZDcZrJxs6ZAG-2" target="M0i-RRYCZDcZrJxs6ZAG-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -28,10 +25,7 @@
         <mxCell id="M0i-RRYCZDcZrJxs6ZAG-5" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;일기 작성&lt;/font&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="490" y="90" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="M0i-RRYCZDcZrJxs6ZAG-9" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="90" y="340" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="M0i-RRYCZDcZrJxs6ZAG-10" value="일기 목록 생성" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="M0i-RRYCZDcZrJxs6ZAG-10" value="일기 생성" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="330" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="M0i-RRYCZDcZrJxs6ZAG-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="M0i-RRYCZDcZrJxs6ZAG-12" target="M0i-RRYCZDcZrJxs6ZAG-10">
@@ -45,6 +39,12 @@
         </mxCell>
         <mxCell id="M0i-RRYCZDcZrJxs6ZAG-13" value="지도 첨부하기" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="490" y="380" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="M0i-RRYCZDcZrJxs6ZAG-30" value="회원" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="80" width="60" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="M0i-RRYCZDcZrJxs6ZAG-33" value="개발자" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="320" width="60" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
