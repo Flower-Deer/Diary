@@ -1,57 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SubmainActivity">
+    tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btn_Learning"
+        android:layout_width="131dp"
+        android:layout_height="169dp"
+        android:text="학습"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Friend"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Family"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Daily" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_Family"
+        android:layout_width="131dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="16dp"
+        android:text="가족"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Emotion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Learning"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Work" />
 
-        <ImageView
-            android:id="@+id/btn_navi"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/user" />
+    <Button
+        android:id="@+id/btn_Friend"
+        android:layout_width="131dp"
+        android:layout_height="169dp"
+        android:text="친구"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Emotion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Learning" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="145dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="16dp"
-            android:text="일기장"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="35sp"
-            app:layout_constraintEnd_toStartOf="@+id/btn_next"
-            app:layout_constraintStart_toEndOf="@+id/btn_navi"
-            app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/btn_Emotion"
+        android:layout_width="131dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="16dp"
+        android:text="감정"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Friend"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Family" />
 
-        <ImageView
-            android:id="@+id/btn_next"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_baseline_keyboard_double_arrow_right_24" />
+    <Button
+        android:id="@+id/btn_Work"
+        android:layout_width="131dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="16dp"
+        android:text="업무"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Family"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Daily"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_Daily"
+        android:layout_width="131dp"
+        android:layout_height="169dp"
+        android:text="일상"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Learning"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Work"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/naviView"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:menu="@menu/navi_mabu"/>
-
-</androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
